@@ -9,10 +9,7 @@ import path from 'path'
 import  history from 'connect-history-api-fallback'
 import  bodyParser from 'body-parser' 
  
-import { Server } from "socket.io";
-
-import web3utils from 'web3-utils'
-
+ 
 import http from 'http'
 import https from 'https'
 
@@ -41,8 +38,8 @@ export default class ExpressServer  {
 
         if(serverConfig.useHTTPS == true ){
           var server = https.createServer({
-            cert: fs.readFileSync('/home/andy/deploy/cert/swampz.io.pem'),
-            key: fs.readFileSync('/home/andy/deploy/cert/swampz.io.key')
+            cert: fs.readFileSync('/home/andy/deploy/cert/baycmarket.io.pem'),
+            key: fs.readFileSync('/home/andy/deploy/cert/baycmarket.io.key')
           });
           console.log('--using https--')
          
