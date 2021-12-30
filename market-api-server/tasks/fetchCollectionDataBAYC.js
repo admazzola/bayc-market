@@ -50,7 +50,7 @@ for(let tokenId=0; tokenId<totalSupply; tokenId+=1){
     console.log(URI)
 
     try{
-        await delay(4000)
+        await delay(1000)
 
         const res = await axios.get( URI )
 
