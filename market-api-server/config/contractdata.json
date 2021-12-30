@@ -6,7 +6,7 @@
  
       "blockstore":{"name":"BlockStore", "address":"0x0419732028fa499200a0e36972e4c139e98d28e1"}, 
        
-      "boredapes":{"name":"BoredApesYachtClub","address":"0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d"}, 
+      "boredapes":{"name":"BoredApes","address":"0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d"}, 
       "mutantapes":{"name":"MutantApes","address":"0x60e4d786628fea6478f785a6d7e704777c86a7c6"} ,
       "phunkyapes":{"name":"PhunkyApes","address":"0x176e0fe17314def59f0f06e976e1b74203be4a55"}
     }
@@ -18,7 +18,7 @@
       
       "weth":{"name":"wEth","address":"0xDf032Bc4B9dC2782Bb09352007D4C57B75160B15", "decimals":18 },
      
-      "boredapes":{"name":"BoredApesYachtClub","address":"0x70BC4cCb9bC9eF1B7E9dc465a38EEbc5d73740FB"}, 
+      "boredapes":{"name":"BoredApes","address":"0x70BC4cCb9bC9eF1B7E9dc465a38EEbc5d73740FB"}, 
       "mutantapes":{"name":"MutantApes","address":"0xfc957dcbe0785ababa07429e4fffe8ad58bd612d"},  
  
       "phunkyapes":{"name":"PhunkyApes","address":"0xfc957dcbe0785ababa07429e4fffe8ad58bd612d"},
