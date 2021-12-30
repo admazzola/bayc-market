@@ -6,8 +6,8 @@
         <div class="brand">
         
         </div>
-        <router-link to="/" class='brand w-nav-brand w--current flex-grow inline text-xl text-gray-200 font-bold'>
-        Swampz.io
+        <router-link to="/" class='brand w-nav-brand w--current flex-grow inline text-xl text-gray-200 font-bold no-underline'>
+        🍌 BAYC Market
         </router-link>
 
  

@@ -5,7 +5,7 @@ import FileHelper from '../lib/file-helper.js'
  
  
 
-let outputConfig = FileHelper.readJSONFile('./market-api-server/output/toadzOutputData.json')
+let outputConfig = FileHelper.readJSONFile('./market-api-server/output/baycOutputData.json')
  
 export default class PopulateTraitsTask {
 
@@ -14,11 +14,11 @@ static async runTask( inputs, mongoInterface ){
  
 let collectionName = inputs.collectionName 
 
-if(collectionName.toLowerCase() == 'cryptoadz'){
-    outputConfig = FileHelper.readJSONFile('./market-api-server/output/toadzOutputData.json')
+if(collectionName.toLowerCase() == 'boredapes'){
+    outputConfig = FileHelper.readJSONFile('./market-api-server/output/baycOutputData.json')
 }
-if(collectionName.toLowerCase() == 'cryptoflyz'){
-    outputConfig = FileHelper.readJSONFile('./market-api-server/output/flyzOutputData.json')
+if(collectionName.toLowerCase() == 'mutantapes'){
+    outputConfig = FileHelper.readJSONFile('./market-api-server/output/maycOutputData.json')
 }
 
 

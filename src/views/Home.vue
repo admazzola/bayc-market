@@ -33,11 +33,7 @@
             </div>
 
 
-            <div class="w-row mt-16">
-              <ToadzTileGrid 
-              
-              />
-            </div>
+            
 
         
  
@@ -51,31 +47,33 @@
               
                  
               
-                  <FrontPageMedia />
+                  <div class="pt-8 relative pb-2 mb-12" style="min-height:200px">
+                       
+                    <div  class="   text-white text-2xl p-2" style="top:35%; left:30%; background: #222b" > Open Source BAYC Marketplace </div>
+
+
+                </div>
 
                    <div> 
  
 
-                      <div class="w-row text-center my-8"> 
+                     <div class="w-row text-center my-8"> 
                         <router-link to="/activity" class='text-orange-600 text-xl block'> View Recent Activity</router-link>
                     </div>
 
 
-                      <div class="w-row text-center my-8"> 
- 
+                  <div class="w-row text-center my-8">  
             
-                      <router-link to="/collection/cryptoadz" class='text-gray-200 text-xl inline text-align:center' style="margin:0 auto;"> Shop Toadz </router-link>
+                      <router-link to="/collection/boredapes" class='text-gray-200 text-xl inline text-align:center' style="margin:0 auto;"> Shop Bored Apes </router-link>
                         
                     
                   </div>
 
-                    <div class="w-row text-center my-8"> 
-
+                    <div class="w-row text-center my-8">  
         
-                      <router-link to="/collection/cryptoflyz" class='text-gray-200 text-xl inline text-align:center ' style="margin:0 auto;"> Shop Flyz </router-link>
-                      
-                    
-                  </div>
+                      <router-link to="/collection/mutantapes" class='text-gray-200 text-xl inline text-align:center ' style="margin:0 auto;"> Shop Mutants </router-link>
+                        
+                   </div>
 
 
                   </div> 
@@ -93,9 +91,7 @@
        <div class="w-row">
 
        </div>
-       <div class="w-row">
-
-         
+       <div class="w-row"> 
 
 
          <div class="column w-col w-col-6 mt-8 py-8">
@@ -116,13 +112,15 @@
 
 
          </div>
+
          <div class="column-2 w-col w-col-6  ">
            
-              <FrontPageMedia /> 
-
-             
+                        
+          
+                      
 
          </div>
+
        </div>
      </div>
    </div>
@@ -150,16 +148,12 @@ import SearchBar from './components/legacy/SearchBar.vue';
 import Navbar from './components/Navbar.vue';
  
 import Footer from './components/Footer.vue';
-import ToadzTileGrid from './components/ToadzTileGrid.vue';
- 
-import FrontPageMedia from './components/FrontPageMedia.vue';
- 
  
 
 export default {
   name: 'Home',
   props: [],
-  components: {Navbar, Footer, ToadzTileGrid,FrontPageMedia,SearchBar},
+  components: {Navbar, Footer,  SearchBar},
   data() {
     return {
       web3Plug: new Web3Plug() ,

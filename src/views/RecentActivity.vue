@@ -30,7 +30,7 @@
 
 
       <div class="w-column mb-16  "  >
-          <div class="text-lg font-bold text-green-600" > Recent Sales  </div>
+          <div class="text-lg font-bold text-black" > Recent Sales  </div>
           
            
           <div  class=" "  > 
@@ -55,7 +55,7 @@
 
 
        <div class="w-column  mb-16 "  >
-          <div class="text-lg font-bold text-green-600"> Recent Offers  </div>
+          <div class="text-lg font-bold text-black"> Recent Offers  </div>
           
            
           <div  class=" "  > 
@@ -78,7 +78,7 @@
 
 
        <div class="w-column mb-16  "  >
-          <div class="text-lg font-bold text-green-600" > Recent Bids  </div>
+          <div class="text-lg font-bold text-black" > Recent Bids  </div>
           
            
           <div  class=" "  > 

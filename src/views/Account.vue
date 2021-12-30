@@ -69,7 +69,7 @@
 
 
           <div  class=" " v-if="!allOwnedNFTs || allOwnedNFTs.length == 0" >
-              No toadz here!!  Only !vibe.  
+              No find Monkee. 🍌 
           </div>
 
 

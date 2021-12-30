@@ -2,14 +2,13 @@
   "mainnet":{
     "contracts":{
       
-      "weth":{"name":"wEth","address":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", "decimals":18 },
-      
+      "weth":{"name":"wEth","address":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", "decimals":18 }, 
  
       "blockstore":{"name":"BlockStore", "address":"0x0419732028fa499200a0e36972e4c139e98d28e1"}, 
        
-      "cryptoadz":{"name":"Cryptoadz","address":"0x1CB1A5e65610AEFF2551A50f76a87a7d3fB649C6"}, 
-      "cryptoflyz":{"name":"Cryptoflyz","address":"0xf8b0a49da21e6381f1cd3cf43445800abe852179"} 
-   
+      "boredapes":{"name":"BoredApesYachtClub","address":"0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d"}, 
+      "mutantapes":{"name":"MutantApes","address":"0x60e4d786628fea6478f785a6d7e704777c86a7c6"} ,
+      "phunkyapes":{"name":"PhunkyApes","address":"0x176e0fe17314def59f0f06e976e1b74203be4a55"}
     }
 
 
@@ -18,11 +17,15 @@
     "contracts":{
       
       "weth":{"name":"wEth","address":"0xDf032Bc4B9dC2782Bb09352007D4C57B75160B15", "decimals":18 },
-      "cryptoadz":{"name":"Cryptoadz","address":"0x70BC4cCb9bC9eF1B7E9dc465a38EEbc5d73740FB"}, 
-      "cryptoflyz":{"name":"Cryptoflyz","address":"0xfc957dcbe0785ababa07429e4fffe8ad58bd612d"}, 
-  
+     
+      "boredapes":{"name":"BoredApesYachtClub","address":"0x70BC4cCb9bC9eF1B7E9dc465a38EEbc5d73740FB"}, 
+      "mutantapes":{"name":"MutantApes","address":"0xfc957dcbe0785ababa07429e4fffe8ad58bd612d"},  
+ 
+      "phunkyapes":{"name":"PhunkyApes","address":"0xfc957dcbe0785ababa07429e4fffe8ad58bd612d"},
  
       "blockstore":{"name":"BlockStore","address":"0x843f116649dda1222812ed6881175bd4206e1fad"} 
+
+      
     }
 
 

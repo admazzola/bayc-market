@@ -12,8 +12,7 @@ import ExpressServer from './lib/express-server.js'
 import PopulateTraitsTask from './tasks/populateTraitsDB.js'
 import PopulateCachedNFTTilesTask from './tasks/populateCachedNFTTiles.js'
 import GenerateContractDataLookupTask from './tasks/generateContractDataLookup.js'
-//import PacketReceiver from './lib/packet-receiver.js'
-//import PacketCustodian from './lib/packet-custodian.js'
+ 
 
 import Web3 from 'web3'
 import NFTTileManager from './lib/nft-tile-manager.js'
@@ -38,11 +37,11 @@ let dataghostConfig = dataghostConfigFile[envmode]
 
     await GenerateContractDataLookupTask.runTask( )
  
-    await PopulateTraitsTask.runTask({collectionName:'Cryptoadz'},mongoInterface)
-    await PopulateCachedNFTTilesTask.runTask({collectionName:'Cryptoadz'},mongoInterface)
+    await PopulateTraitsTask.runTask({collectionName:'boredapes'},mongoInterface)
+    await PopulateCachedNFTTilesTask.runTask({collectionName:'boredapes'},mongoInterface)
 
-    await PopulateTraitsTask.runTask({collectionName:'Cryptoflyz'},mongoInterface)
-    await PopulateCachedNFTTilesTask.runTask({collectionName:'Cryptoflyz'},mongoInterface)
+    await PopulateTraitsTask.runTask({collectionName:'mutantapes'},mongoInterface)
+    await PopulateCachedNFTTilesTask.runTask({collectionName:'mutantapes'},mongoInterface)
  
 
     console.log('boot vibegraph interface ', dataghostConfig.vibeGraphConfig.dbName)
@@ -50,8 +49,7 @@ let dataghostConfig = dataghostConfigFile[envmode]
     let vibegraphInterface =  new MongoInterface() 
     await vibegraphInterface.init( dataghostConfig.vibeGraphConfig.dbName )
  
-
-    //let web3 = new Web3( serverConfig.web3provider  )
+ 
 
     let web3 = new Web3(new Web3.providers.WebsocketProvider( serverConfig.web3provider, {
       clientConfig: {
@@ -64,8 +62,7 @@ let dataghostConfig = dataghostConfigFile[envmode]
     let dataghost = new DataGhost()
     dataghost.init(web3  ) 
 
-    //let packetReceiver = new PacketReceiver(web3, mongoInterface, wolfpackInterface, serverConfig)
- 
+    
 
     let nftTileManager = new NFTTileManager(web3,mongoInterface,vibegraphInterface,serverConfig)
     await nftTileManager.init() 
@@ -77,10 +74,7 @@ let dataghostConfig = dataghostConfigFile[envmode]
     
     console.log('web3 ready with provider ',serverConfig.web3provider )
     
-
-    //add this back in later 
-    //let packetCustodian = new PacketCustodian(web3,mongoInterface, wolfpackInterface, serverConfig)
-
+ 
 
 
 }

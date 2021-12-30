@@ -2,25 +2,25 @@
     "development":{
         "useHTTPS":false,
         "chainId":4,
-        "dbName":"toadz_development",
+        "dbName":"apes_development",
         "web3provider":"https://eth-rinkeby.alchemyapi.io/v2/" 
     },
     "test":{
         "useHTTPS":false,
         "chainId":4,
-        "dbName":"toadz_test",
+        "dbName":"apes_test",
         "web3provider":"https://eth-rinkeby.alchemyapi.io/v2/" 
     },
     "staging":{
         "useHTTPS":true,
         "chainId":4,
-        "dbName":"toadz_staging",
+        "dbName":"apes_staging",
         "web3provider":"https://eth-rinkeby.alchemyapi.io/v2/" 
     },
     "production":{
         "useHTTPS":true,
         "chainId":1,
-        "dbName":"toadz_production",
+        "dbName":"apes_production",
         "web3provider":"https://eth-mainnet.alchemyapi.io/v2/"
     }
     
