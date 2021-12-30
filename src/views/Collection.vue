@@ -83,9 +83,7 @@ import Footer from './components/Footer.vue';
 import TreeList from './components/TreeList.vue';
 
 import TiledTokenBrowser from './components/TiledTokenBrowser.vue';
-//import ToadzTileGrid from './components/ToadzTileGrid.vue';
  
-//import FrontPageMedia from './components/FrontPageMedia.vue';
  
 import StarflaskApiHelper from '../js/starflask-api-helper.js'
 
@@ -99,7 +97,7 @@ export default {
   components: {Navbar, Footer,TreeList,TiledTokenBrowser},
   data() {
     return {
-      collectionName: 'Cryptoadz',
+      collectionName: 'boredapes',
       
       web3Plug: new Web3Plug() ,
       activePanelId: null ,
@@ -115,14 +113,9 @@ export default {
 
     let queryCollectionName =  this.$route.params.collectionName
     if(queryCollectionName){
-       if(queryCollectionName.toLowerCase() == 'cryptoadz'){
-         this.collectionName = 'Cryptoadz'
-      }
-
-      if(queryCollectionName.toLowerCase() == 'cryptoflyz'){
-         this.collectionName = 'Cryptoflyz'
-      }
-     
+      
+         this.collectionName = queryCollectionName.toLowerCase()
+       
     }
 
 
