@@ -14,7 +14,7 @@ import path from 'path'
  
 import FileHelper from '../lib/file-helper.js'
  
- const downloadImages = true 
+ const downloadImages = false 
  const writeTraitsFile = true 
  
 let fetchConfig = FileHelper.readJSONFile('./market-api-server/tasks/fetchConfig.json')
@@ -44,9 +44,7 @@ for(let tokenId=0; tokenId<totalSupply; tokenId+=1){
 
 
     //let URI = `https://api.opensea.io/api/v1/assets?order_direction=desc&offset=${offset}&limit=50&collection=${collectionName}`
-
-
-    let URI = `https://ipfs.io/ipfs/QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/${tokenId}`
+    let URI = `https://boredapeyachtclub.com/api/${collectionName}/${tokenId}`
     console.log(URI)
 
     try{
@@ -64,7 +62,7 @@ for(let tokenId=0; tokenId<totalSupply; tokenId+=1){
                 let imageIPFSHash = res.data.image.split('://')[1]
 
                 let imageURL = `https://ipfs.io/ipfs/${imageIPFSHash}`
-                await downloadImage(tokenId, imageURL)
+                await downloadImage(imageURL)
             } 
         
             traitsMap[tokenId] = res.data.attributes 
