@@ -27,8 +27,10 @@
          <div class="  py-8">
 
 
-            <div class="w-row">
-             <img src="@/assets/images/SwampzHeader.png"   class="inline-block select-none"  /> 
+             
+
+             <div class="w-row">
+             <FrontPageMedia  /> 
 
             </div>
 
@@ -45,11 +47,18 @@
 
               <div class="py-32 " style="width:50%; margin: 0 auto;"> 
               
-                 
-              
-                  <div class="pt-8 relative pb-2 mb-12" style="min-height:200px">
+
+                 <div class="pt-8 relative pb-2 mb-2" style="min-height:100px">
                        
-                    <div  class="   text-white text-2xl p-2" style="top:35%; left:30%; background: #222b" > Open Source BAYC Marketplace </div>
+                    <img  class=" text-2xl p-2"  src="@/assets/images/BAYC_header.png" />
+
+
+                </div>
+
+              
+                 <div class=" relative pb-2 mb-12" style="min-height:200px">
+                       
+                    <div  class="   text-white text-2xl p-2" style="  background: #222b" > Open Source Unofficial Marketplace </div>
 
 
                 </div>
@@ -148,12 +157,13 @@ import SearchBar from './components/legacy/SearchBar.vue';
 import Navbar from './components/Navbar.vue';
  
 import Footer from './components/Footer.vue';
+import FrontPageMedia from './components/FrontPageMedia.vue'
  
 
 export default {
   name: 'Home',
   props: [],
-  components: {Navbar, Footer,  SearchBar},
+  components: {Navbar, Footer, FrontPageMedia, SearchBar},
   data() {
     return {
       web3Plug: new Web3Plug() ,

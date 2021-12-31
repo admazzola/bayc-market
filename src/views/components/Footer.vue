@@ -5,7 +5,7 @@
     <div class="container margin-center">
            
          
-            <img src="@/assets/images/swampz.png" width="100"  /> 
+             
         </div>
 
         
