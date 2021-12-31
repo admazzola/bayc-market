@@ -27,9 +27,8 @@ async function runTask(){
 
 
 
-let totalSupply = fetchConfig.totalSupply
-
-let collectionName = fetchConfig.collectionName
+let totalSupply = 10000
+ 
  
 let contractData
 

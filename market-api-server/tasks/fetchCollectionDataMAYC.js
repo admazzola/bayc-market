@@ -26,13 +26,7 @@ const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
 async function runTask(){
 
 
-
-let totalSupply = fetchConfig.totalSupply
-
-let collectionName = fetchConfig.collectionName
- 
-let contractData
-
+  
 
 let tokenIds = [] 
 let failedRequestIds = []
@@ -40,15 +34,17 @@ let failedRequestIds = []
 let traitsMap = {} 
   
 
-for(let tokenId=0; tokenId<totalSupply; tokenId+=1){
+for(let tokenId=0; tokenId<20000; tokenId+=1){
 
 
     //let URI = `https://api.opensea.io/api/v1/assets?order_direction=desc&offset=${offset}&limit=50&collection=${collectionName}`
-    let URI = `https://boredapeyachtclub.com/api/${collectionName}/${tokenId}`
+
+    
+    let URI = `https://boredapeyachtclub.com/api/mutants/${tokenId}`
     console.log(URI)
 
     try{
-        await delay(4000)
+        await delay(1000)
 
         const res = await axios.get( URI )
 
