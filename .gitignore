@@ -2,7 +2,10 @@
 node_modules
 /dist
  
-/market-api-server/config/serverconfig.json
+ public/images/boredapes
+ public/images/mutantapes
+ market-api-server/output/images/*
+market-api-server/config/serverconfig.json
 *serverconfig.json
 
 # local env files
