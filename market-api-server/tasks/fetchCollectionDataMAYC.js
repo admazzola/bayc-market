@@ -14,7 +14,7 @@ import path from 'path'
  
 import FileHelper from '../lib/file-helper.js'
  
- const downloadImages = false 
+ const downloadImages = true 
  const writeTraitsFile = true 
  
 let fetchConfig = FileHelper.readJSONFile('./market-api-server/tasks/fetchConfig.json')
@@ -58,7 +58,7 @@ for(let tokenId=0; tokenId<20000; tokenId+=1){
                 let imageIPFSHash = res.data.image.split('://')[1]
 
                 let imageURL = `https://ipfs.io/ipfs/${imageIPFSHash}`
-                await downloadImage(imageURL)
+                await downloadImage(tokenId,imageURL)
             } 
         
             traitsMap[tokenId] = res.data.attributes 
@@ -97,11 +97,8 @@ runTask()
 
 
 async function  downloadImage(tokenId, url){
-  
-    //console.log('dl images', tokenId)
-   // if(tokenId == 2484 || tokenId== 3875 || tokenId == 2160 || tokenId == 4700 
-   //     || tokenId == 2841) return 
-
+    console.log('dl image',url )
+ 
     let image_path = path.join ( `./market-api-server/output/images/${tokenId}.jpg` )
 
 
